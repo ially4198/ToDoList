@@ -48,10 +48,6 @@ if (trashCanContent) {
         retrievDivL.remove();
         alert("List deleted permanently");
         console.log(updatedLists);
-
-        // if (updatedLists.length === 0) {
-        //   trashCanContent.innerHTML = "<p>No notes here.</p>";
-        // }
       }
     });
 
@@ -59,3 +55,8 @@ if (trashCanContent) {
     trashCanContent.appendChild(retrievDivL);
   });
 }
+
+const backHome = document.getElementById("backhomeFromTrash");
+backHome.addEventListener("click", ()=>{
+  window.location.href ="index.html";
+})

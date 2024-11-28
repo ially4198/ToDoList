@@ -405,3 +405,18 @@
     }
    
  }
+ @media screen and (max-width:992px){
+   #sidebar{
+      width: 40%;
+   }
+ }
+ @media screen and (max-width:768px){
+   #sidebar{
+      width: 50%;
+   }
+ }
+ @media screen and (max-width:600px){
+   #sidebar{
+      width: 55%;
+   }
+ }

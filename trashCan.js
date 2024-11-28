@@ -52,21 +52,13 @@ if (trashCanContent) {
         alert("Note deleted permanently");
         console.log(updatedNotes);
 
-        if (updatedNotes.length === 0) {
-          trashCanContent.innerHTML = "<p>No notes here.</p>";
-        }
       }
     });
 
     retrievDiv.appendChild(deleteTrash);
 
-    // retrievDiv.addEventListener("click", () => {
-    //   console.log("Clicked Deleted Note", delnote);
-    //   localStorage.removeItem("currentNoteId");
-    //   localStorage.setItem("currentDelNoteId", delnote.id);
-    //   window.location.href = "text.html";
-    // });
-
     trashCanContent.appendChild(retrievDiv);
   });
 }
+
+
