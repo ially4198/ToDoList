@@ -1,0 +1,407 @@
+ body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 100%;
+    place-items: center; */
+
+ }
+
+ .item h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    color: white;
+ }
+
+ #header {
+    width: 100%;
+    height: 60px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    position: fixed;
+ }
+
+ .item {
+    margin-top: 10px;
+    margin-left: 15px;
+ }
+
+ .item button {
+    background-color: orange;
+    border: none;
+    width: 30px;
+    height: 30px;
+
+
+ }
+
+ .item i {
+    font-size: 30px;
+    color: white;
+
+ }
+
+ .item3 button {
+    margin-right: 15px;
+
+ }
+
+ #sidebar {
+    height: 100vh;
+    width: 30%;
+    background-color: white;
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+ }
+
+ #sidebarHalf {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1050;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+ }
+
+ #sidebarHalf.active {
+    visibility: visible;
+    background-color: black;
+    opacity: 0.5;
+ }
+
+ #sidebar.active {
+    left: 0;
+ }
+
+ #sidebar h3 {
+    margin-left: 15px;
+ }
+
+ .sidebarbtn {
+    margin-top: 20px;
+ }
+
+ .sidebarbtn button {
+    display: flex;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    margin: 10px 0px 15px 15px;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .sidebarbtn i {
+    font-size: 25px;
+    margin-right: 10px;
+ }
+
+ #maincontent {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+    position: absolute;
+    top: 60px;
+ }
+
+ .addbtn {
+    position: fixed;
+    left: 80%;
+    top: 70%;
+    border-radius: 50%;
+    z-index: 1000;
+
+ }
+
+ .add {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    background-color: red;
+    border: none;
+ }
+
+ .tooltip {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    transition: top 0.3s ease;
+ }
+
+ .tooltip1 {
+    margin-left: -102px;
+    margin-right: 5px;
+ }
+
+ .tooltip2 {
+    margin-left: -71px;
+    margin-right: 5px;
+ }
+
+ #tooltip1,
+ #tooltip2 {
+    visibility: hidden;
+
+ }
+
+ #add {
+    z-index: 1010;
+    margin-left: 15px;
+    position: absolute;
+
+ }
+
+ #addnote {
+    position: relative;
+    top: 60px;
+    z-index: 1009;
+
+ }
+
+ #addchecklist {
+    position: relative;
+    top: 120px;
+    z-index: 1008;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ .topbar {
+   width: 100%;
+    background-color: orange;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+
+ .topbar button {
+    color: white;
+    background-color: orange;
+    border: none;
+    font-size: 30px;
+ }
+
+ .topbar input {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+ }
+
+ .text-area {
+    height: 100vh;
+    background-color: rgb(252, 236, 166);
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+
+ }
+
+ #note {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    background: repeating-linear-gradient(to bottom,
+          rgb(252, 236, 166),
+          23px,
+          black 24px);
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+    margin: 10px;
+ }
+
+ .note-preview {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    background: rgb(252, 236, 166);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+ }
+
+ .note-preview button {
+    position: absolute;
+    top: 80%;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+ }
+
+ .contentPara {
+    visibility: hidden;
+ }
+
+ .note-preview h4 {
+    color: orange;
+    padding-top: 20px;
+ }
+
+
+
+ #add-item {
+    border: none;
+    background-color: rgb(252, 236, 166);
+    color: red;
+    font-size: 20px;
+ }
+#checklist-container{
+ width: 100%;
+}
+ .checklistDiv {
+    margin: 20px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+
+ }
+
+ #checkbox {
+    width: 20px;
+    height: 30px;
+    border: 3px solid red;
+    background-color: white;
+    cursor: pointer;
+
+ }
+
+ #checkbox:checked {
+    background-color: orange;
+    border-color: orange;
+ }
+
+ .checktext {
+    width: 30%;
+    height: 30px;
+    border: none;
+    background-color: rgb(252, 236, 166);
+ }
+
+ #deletecheck-div {
+    border: none;
+    background-color: rgb(252, 236, 166);
+ }
+
+
+
+
+ .list-preview {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    background: rgb(252, 236, 166);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+ }
+
+ .list-preview button {
+    position: absolute;
+    top: 80%;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+ }
+
+ .list-preview h4 {
+    color: orange;
+    padding-top: 20px;
+ }
+
+
+
+
+ .note-review,
+ .list-review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    background: rgb(252, 236, 166);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+ }
+
+ #trashCanContent button {
+
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+ }
+
+ @media screen and (max-width:600px) {
+    .topbar button {
+       font-size: 20px;
+    }
+
+    .item i {
+       font-size: 20px;
+    }
+
+    .item h3 {
+       font-size: 20px;
+    }
+
+    .topbar button {
+       font-size: 18px;
+    }
+
+    .text-area {
+
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+
+    #add-item {
+       font-size: 15px;
+
+    }
+   
+ }

@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55e6f39867.js" 
+    crossorigin="anonymous">
+    </script>
+    
+ </head>
+ <body>
+  
+    <div id="header">
+        <div class="item item 1">
+            <button id="item1b"><i class="fa-solid fa-bars"></i></button>
+             
+        </div>
+        <div class=" item item2">
+            <h3>Note plus</h3>
+        </div>
+        <div class="item item3">
+            <button id="item3b1"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="item3b2"><i class="fa-solid fa-bars-staggered"></i></button>
+            <button id="item3b3" style="margin-right: 30px;"><i class="fa-solid fa-toggle-on"></i></button>
+        </div>
+        
+    </div>
+    <div id="sidebar">
+        <h3>Note plus</h3>
+        <hr>
+        <div class="sidebarbtn">
+            <button id="sidebtn1"><i class="fa-regular fa-note-sticky"></i> Notes</button><br>
+            <button id="sidebtn2"><i class="fa-regular fa-clock"></i> Reminders</button><br>
+            <button id="sidebtn3"><i class="fa-regular fa-file-zipper"></i> Archive</button><br>
+            <button id="sidebtn4"> <i class="fa-solid fa-trash-can"></i><a href="trashCan.html">Trash Can</a></button><br>
+            <button id="sidebtn5"><i class="fa-solid fa-circle-info"></i> Mores</button>
+
+        </div>
+    </div>
+    <div id="sidebarHalf"></div>
+    <div id="maincontent" > 
+        <div class="addbtn">
+                <i id="tooltip1" class="tooltip1 tooltip">Add Checklist</i><button id="addchecklist" class="add">+</button><br>
+                <i id="tooltip2" class="tooltip2 tooltip">Add Note</i><button id="addnote" class="add">+</button><br>
+                <button id="add" class="add">+</button>
+        </div>
+       
+    </div>
+   
+  
+
+    <script src="homepageNavigations.js"></script>
+    <script src="savenote.js"></script>
+    <script src="retrieveNoteTohome.js"></script>
+    <!-- <script src="add.save.checklist.js"></script> -->
+    <script src="retreiveChecklistTohome.js"></script>
+    <!-- <script src="show.checklist.js"></script> -->
+     <script src="trashCan.js"></script>
+    
+   
+ </body>
+ </html>
