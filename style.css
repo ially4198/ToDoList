@@ -420,3 +420,13 @@
       width: 55%;
    }
  }
+ /* #search-div{
+   display: flex;
+   justify-content: center;
+ } */
+  #search-icon{
+   line-height: 30px;
+  }
+  #logo{
+   line-height: 30px;
+  }
